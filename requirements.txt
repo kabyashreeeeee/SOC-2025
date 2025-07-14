@@ -1,0 +1,16 @@
+streamlit
+yfinance
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+torch
+gym
+plotly
+ta
+finrl
+requests
+tqdm
+
+
