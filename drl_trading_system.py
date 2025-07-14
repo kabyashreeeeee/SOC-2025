@@ -38,7 +38,7 @@ print("=" * 60)
 # ============================================================================
 
 class DataPipeline:
-    def __init__(self, assets=['AAPL', 'MSFT', 'GOOGL', 'TSLA'], period='3y'):
+    def __init__(self, assets=['AAPL', 'MSFT', 'GOOGL', 'TSLA'], period='6y'):
         self.assets = assets
         self.period = period
         self.raw_data = {}
