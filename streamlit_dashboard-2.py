@@ -7,7 +7,21 @@ Original file is located at
     https://colab.research.google.com/drive/1QnaM0Dh-sTZ37PcclCJ-q-shOYfAp8c4
 """
 
-!pip install plotly pandas numpy yfinance streamlit scikit-learn torch gymnasium stable-baselines3 matplotlib seaborn ta
+import subprocess
+import sys
+
+# Install packages if not already installed
+packages = [
+    'plotly', 'pandas', 'numpy', 'yfinance', 'streamlit', 
+    'scikit-learn', 'torch', 'gymnasium', 'stable-baselines3', 
+    'matplotlib', 'seaborn', 'ta'
+]
+
+for package in packages:
+    try:
+        __import__(package)
+    except ImportError:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
 import streamlit as st
 import pandas as pd
 import numpy as np
