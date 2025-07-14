@@ -9,19 +9,6 @@ Original file is located at
 
 import subprocess
 import sys
-
-# Install packages if not already installed
-packages = [
-    'plotly', 'pandas', 'numpy', 'yfinance', 'streamlit', 
-    'scikit-learn', 'torch', 'gymnasium', 'stable-baselines3', 
-    'matplotlib', 'seaborn', 'ta'
-]
-
-for package in packages:
-    try:
-        __import__(package)
-    except ImportError:
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
 import streamlit as st
 import pandas as pd
 import numpy as np
